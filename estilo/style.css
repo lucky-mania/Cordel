@@ -1,5 +1,14 @@
 @charset "UTF-8";
+/*Algumas palavras da url vem separadas, tem que juntar para funcionar*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+:root{
+    --font1: Verdana,Geneva,Tahoma,sans-serif;
+    --font2: 'Passion One', cursiva;
+    --font3: 'Sriracha', cursiva;
+
+}
 *{
     margin:  0px;
     padding: 0px;
@@ -12,6 +21,7 @@ vy= Largura
 html, body{
     min-height: 100vh;
     background-color: darkgray; /* cor de fundo da pagina*/
+    font-family: var(--font1);
 }
 header{
     background-color: black; /*cor de fundo do header*/
@@ -25,7 +35,10 @@ text-transform: uppercase;// letra maiuscula
 */
 header>h1{
     padding-top: 50px;/*ajuda a alinhar no centro*/
-     font-variant: small-caps;  
+     font-variant: small-caps; 
+     font-family: var(--font2);
+     font-size: 4em; /*Tamnaho letra*/ 
+     font-size: 10vw; /*comando top, no celular letra menor e no pc leta maior*/ 
 }
 header>p{
     padding-bottom: 50px;
@@ -44,6 +57,9 @@ section{
     padding-bottom:10vh;
     line-height: 2em;/*espaçamento duplo*/
     padding-left: 30px; /*deixa o texto um pouco mais afastado das bordas*/
+    font-family: var(--font3);
+    font-size: 3.5vw;/*tamanho da letra */ 
+
 }
 section.normal{
     background-color: aliceblue;
@@ -54,7 +70,9 @@ section.imagem{
     color: aliceblue;
 }
 section.imagem >p{
-    width: 400px; /*Largura da caixa*/
+    display: inline-block; /*Caixa que se adapta ao tamanho do conteudo*/
+    padding: 5px; /*separada na letra*/
+   /* width: 400px; //Largura da caixa*/
     background-color: rgb(63, 60, 60);
 }
 footer{
