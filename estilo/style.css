@@ -86,7 +86,7 @@ section#img01{
    (../) para pegar outro arquivo
    */
    background-position: right center;
-   background-size: cover;
+   background-size: cover;/*vai cobrir a tela inteira*/
  
 }
 section#img02{
