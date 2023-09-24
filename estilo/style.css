@@ -1,1 +1,65 @@
 @charset "UTF-8";
+
+*{
+    margin:  0px;
+    padding: 0px;
+}
+/*
+Dica 1:
+vh= Altura
+vy= Largura
+*/
+html, body{
+    min-height: 100vh;
+    background-color: darkgray; /* cor de fundo da pagina*/
+}
+header{
+    background-color: black; /*cor de fundo do header*/
+    color: aliceblue;
+    text-align: center;/* alinha o texto no centro(header)*/
+}
+/*
+Dica(2 modelos):
+text-transform: uppercase;// letra maiuscula
+  font-variant: small-caps; // deixa a primeira letra da palavra maiscula
+*/
+header>h1{
+    padding-top: 50px;/*ajuda a alinhar no centro*/
+     font-variant: small-caps;  
+}
+header>p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: aliceblue;/*cor da palavra*/
+    text-decoration: none;/*tira o "___" do link da palavra*/
+    font-weight: bolder; /* deixa a palavra em negrito*/
+}
+header a:hover, footer a:hover/*quando passar a mouse no link vai mudar*/{
+    color: cadetblue; 
+    text-decoration: underline;/*volta a ter o "___" da palavra*/
+}
+section{
+    padding-top: 10vh;
+    padding-bottom:10vh;
+    line-height: 2em;/*espaçamento duplo*/
+    padding-left: 30px; /*deixa o texto um pouco mais afastado das bordas*/
+}
+section.normal{
+    background-color: aliceblue;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(95, 90, 90);
+    color: aliceblue;
+}
+section.imagem >p{
+    width: 400px; /*Largura da caixa*/
+    background-color: rgb(63, 60, 60);
+}
+footer{
+ background-color: black;
+ text-align: center;
+ color: aliceblue;
+ padding: 10px;/* deixa maior o fundo*/
+}
